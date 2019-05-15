@@ -1,17 +1,13 @@
-Pod::Spec.new do |s|
-  s.platform = :ios
-  s.ios.deployment_target = '12.0'
-  s.name         = "SingleFramework"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of MyFramework is used for testing purpose."
-  s.description  = <<-DESC
-  A much much longer description of single framework has two more frameworks.
-                   DESC
-  s.homepage     = "https://github.com/ssuresh1295/demolibrary.git"
-  s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author       = { "vinothkanna.G" => "vinod.kanna@npcompete.com" }
-  s.framework = "testFrameworks"
-  s.framework = "secondTestFramework"
-  s.source       = { :git => "https://github.com/ssuresh1295/demolibrary.git", :tag => "#{s.version}" }
-s.source_files = "SingleFramework/*.{swift,framework}"
+Pod::Spec.new do |spec|
+  spec.name          = 'SingleFramework'
+  spec.version       = '0.0.1'
+  spec.license       = { :type => 'MIT' }
+  spec.homepage      = 'https://github.com/tonymillion/Reachability'
+  spec.authors       = { 'VinothkannaG' => 'vinod.kanna@npcompete.com' }
+  spec.summary       = 'ARC and GCD Compatible Reachability Class for iOS and OS X.'
+  spec.source        = { :git => 'https://github.com/ssuresh1295/demolibrary.git', :tag => '0.0.1' }
+
+  spec.ios.deployment_target  = '12.2'
+
+  spec.source_files       = 'SingleFramework/*.swift', 'SingleFramework/combinedFramework/*.framework'
 end
