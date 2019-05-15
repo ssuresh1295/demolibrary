@@ -10,6 +10,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/ssuresh1295/demolibrary.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "vinothkanna.G" => "vinod.kanna@npcompete.com" }
+  s.framework = "testFrameworks"
+  s.framework = "secondTestFramework"
   s.source       = { :git => "https://github.com/ssuresh1295/demolibrary.git", :tag => "#{s.version}" }
 s.source_files = "SingleFramework/*.{swift,framework}"
 end
