@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.homepage     = "http://EXAMPLE/MyFramework"
   s.license      = "Copyleft"
   s.author       = { "vinothkanna.G" => "vinod.kanna@npcompete.com" }
-  s.source       = { :path => '.' }
-  # s.source       = { :git => "https://github/samwize/MyFramework", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ssuresh1295/demolibrary.git", :tag => "#{s.version}" }
   s.source_files  = "Source/**/*.swift"
 end
